@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini Theatre Booking Seat</title>
+</head>
+<body>
+    <h1> MINI THEATRE BGR-48</h1>
+    <div class="first-container">
+        <label> Select a movie:</label>
+        <select id="list-movie">
+            <option value="35000">IP Man 4 (Rp.35.000)</option>
+            <option value="100000">Avenger 3D (Rp.100.000)</option>
+            <option value="40000">Kamen Rider Reiwa (Rp.40.000)</option>
+            <option value="50000">Wonder Woman (Rp.50.000)</option>
+        </select>
+    </div>
+    <!-- Seat Information -->
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <tag>Available</tag>
+        </li>
+        <li>
+            <div class="seat seat-selected"></div>
+            <tag>Selected</tag>
+        </li>
+        <li>
+            <div class="seat seat-occupied"></div>
+            <tag>Occupied</tag>
+        </li>
+    </ul>
+    <!-- Seat List -->
+    <div class="second-container">
+        <div class="movie-screen"></div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat seat-occupied"></div>
+            <div class="seat seat-occupied"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat seat-occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat seat-occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+
+    <p class="info">You have selected <span id="count"> 0</span> seat with total price Rp. <span id="total-price">0</span></p>
+    <script src="script.js"></script>
+</body>
+</html>
